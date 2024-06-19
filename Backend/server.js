@@ -39,7 +39,7 @@ app.post('/api/convert', async (req, res) => {
             });
         } else {
             res.json({
-                message: "Error converting currency",
+                message: "Error converting currency due to insufficient data",
                 details: response.data,
             });
         }
